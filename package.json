@@ -1,0 +1,29 @@
+{
+  "name": "proximity-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "author": "Diego Vasquez",
+  "license": "ISC",
+  "dependencies": {
+    "busboy-body-parser": "^0.3.2",
+    "csvtojson": "^2.0.10",
+    "express": "^4.17.1",
+    "mongodb-memory-server": "^6.9.3",
+    "mongoose": "^5.11.18"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "supertest": "^6.1.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
