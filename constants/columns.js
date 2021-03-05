@@ -1,4 +1,7 @@
-const columns = {
+/**
+ * Configuration columns for companyA
+ * */
+exports.columns = {
     companyA: {
         UUID: "UUID",
         VIN: "VIN",
@@ -12,7 +15,3 @@ const columns = {
         UPDATE_DATE: "Update Date",
     }
 };
-
-module.exports = {
-    columns
-}

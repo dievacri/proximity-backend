@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-
+/**
+* Column Schema for companyA
+* */
 const fileSchema = new Schema({
     uuid: {
         type: String,
@@ -44,8 +46,4 @@ const fileSchema = new Schema({
     }
 });
 
-const fileModel = mongoose.model("file", fileSchema);
-
-module.exports = {
-    fileModel
-}
+exports.fileModel = mongoose.model("file", fileSchema);
